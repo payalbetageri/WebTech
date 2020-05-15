@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTERATION PAGE</title>
+        <link rel="stylesheet" href="styles_for_reg.css" type="text/css">
+    </head>
+	<script>
+	/*function checkpass(){
+		var p=f.passwd.value;
+		var pc=f.cpasswd.value;
+		if(p!=pc)
+			alert("password mismatches");
+	}
+	*/
+	</script>
+    <body>
+        
+        <form name="f " action="registration.php" method="post">
+            <h1>Register To Personalize</h1>
+            <div class="reg">
+                <form id="reg" >
+                    <h2>Register here</h2>
+                    Enter your first Name:<br><input type="text" name="fname" id="name" placeholder="Enter your first name"required></input><br><br>
+                    Enter your second Name:<br/><input type="text" name="sname"id="name" placeholder="Enter your last name"required></input><br><br>
+                    Enter your Mail:<br/><input type="email" name="email" id="name" placeholder="Enter your mail here"required></input><br><br>
+                    Enter your Password:<br/><input type="password" name="passwd" id="name" placeholder="Enter your password"required></input><br><br>
+                    Re-Enter your Password:<br/><input type="password" onblur="checkpass()"name="cpasswd" id="name" placeholder="Re-Enter your password"required></input><br><br>
+                    <select class="code">
+                        <option value="code">+91</option>
+                        <option value="code">+92</option>
+                        <option value="code">+93</option>
+                        <option value="code">+94</option>
+                        <option value="code">+95</option>
+                    </select>
+                    <input type="number" id="num" placeholder="0123457"required><br><br>
+                    <input type="radio" name="Male" id="male">&nbsp; Male &nbsp;
+                    <input type="radio" name="Male" id="female">&nbsp; Female &nbsp;
+                    <input type="radio" name="Male" id="others">&nbsp; Others &nbsp;<br><br>
+                    <input type="submit" value="register" id="sub" >
+                </form>
+            </div>
+			
+        </form>
+
+    </body>
+</html>
+

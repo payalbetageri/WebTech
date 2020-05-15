@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <style>
+    .banner-image img {
+      width: 100%;
+      height: 700px;
+    }
+
+    body {
+      background-color: gray;
+      margin: 10px;
+    }
+
+    .fun {
+      width: 400px;
+      height: 700px;
+      background-color:rgb(37, 88, 109);
+      box-shadow: 0 15px 30px rgba(0,0,0,.5);
+    }
+
+    .banner-image,
+    .fun {
+      margin: 3px;
+    }
+
+    .quote {
+      position:relative;
+      top:60px;
+      color:rgb(238, 221, 69);
+      text-decoration-style: wavy;
+      font-size: 50px;
+      text-align: center;
+
+    }
+    .desc{
+      position:relative;
+      top:100px;
+      font-size: 15px;
+      text-align:center;
+      color:white;
+    }
+    .desc1{
+      position:relative;
+      top:120px;
+      font-size: 15px;
+      text-align:center;
+      color:white;
+    }
+    .link{
+      position:relative;
+      top:200px;
+      align-content: center;
+    }
+    .a{
+      color:white;
+      font-size: 25px;;
+    }
+    .anchor:hover{
+      text-decoration: none;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="banner-image">
+        <img src="slide1.jpg" alt="" class="mySlides">
+        <img src="slide2.jpg" alt="" class="mySlides">
+        <img src="slide3.jpg" alt="" class="mySlides">
+        <img src="slide4.jpg" alt="" class="mySlides">
+        <img src="slide5.jpg" alt="" class="mySlides">
+        <img src="slide6.jpg" alt="" class="mySlides">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="fun">
+        <h1 class="quote">TIME IS ALL WE HAVE</h1>
+        <div class="desc">
+          Your one stop destination to shop watches and clocks ranging from analog to digital,belt to chain,simple to accesorized.
+        </div>
+        <div class="desc1">
+          Wait! it doesn't stop here.We are giving you an opportunity to exclusivey design your own watch.That is<b> PERSONALIZE</b>
+          </div>
+        <div class="link">
+        <h1 class="a">New User?</h1>
+        <a class="anchor" href="registration.html">Register</a>
+        <h1 class="a">Login to continue...</h1>
+        <a class="anchor" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) { slideIndex = 1 }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+</html>

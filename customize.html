@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleswe.css">
+
+
+</head>
+
+<body>
+
+
+    <h3>KNOW YOUR WATCH</h3>
+    <table>
+        <tr>
+            <td>
+                <img id="icon" src="watchdials.jpg" onclick=dispdial()><br>
+                <div id="dialname">Personalize Your Dial</div>
+            </td>
+            <td rowspan="2" width="75%">
+
+                <div id="container">
+                    <div>
+                        <div class="product-description">
+                            <span> Personalize Watch</span>
+                            <h1>DIAL DETAILS</h1>
+                        </div>
+                        <div class="product-configuration">
+                            <div class="product-design">
+                                <span>SELECT DESIGN</span>
+                                <div class="design-choose">
+                                    <label>
+                                        <input type="radio" id="line" name="design" value="line">
+                                        <img src="linescrop.jpg" height="10px" width="10px">
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="number" name="design" value="number">
+                                        <img src="numberscrop.jpg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="plane" name="design" value="plane">
+                                        <img src="planecrop.jpg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="roman" name="design" value="roman">
+                                        <img src="romandial.jpg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="dot" name="design" value="dot">
+                                        <img src="dotdialcrop.jpg">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="dial-choose">
+                                <span> DIAL SHAPE</span>
+                                <div class="dial-shape">
+                                    <br>
+                                    <label>
+                                        <input type="radio" id="circle" name="shape" value="circle">
+                                        <span id="shape">Circle</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="square" name="shape" value="square">
+                                        <span id="shape">Square</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="oval" name="shape" value="oval">
+                                        <span id="shape">Oval</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="leaf" name="shape" value="leaf">
+                                        <span id="shape">Leaf</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="triangle" name="shape" value="triangle">
+                                        <span id="shape">Triangle</span>
+                                    </label>
+
+                                </div><br>
+                                <div id="color-size">
+                                    <div class="dial-color">
+                                        <span>COLOR</span>
+                                        <input id="sel-col" type="color">
+                                    </div>
+                                    <div class="dial-size">
+                                        <span>SIZE</span>
+                                        <div class="select-size" style="width:200px;">
+                                            <select id="size">
+                                                <option value="0">Select size:</option>
+                                                <option value="30">30mm</option>
+                                                <option value="32">32mm</option>
+                                                <option value="34">34mm</option>
+                                                <option value="36">36mm</option>
+                                                <option value="38">38mm</option>
+                                                <option value="40">40mm</option>
+                                                <option value="42">42mm</option>
+                                                <option value="44">44mm</option>
+                                                <option value="46">46mm</option>
+                                                <option value="48">48mm</option>
+                                                <option value="50">50mm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="strapinfo">
+                    <div class="strapcolor">
+                        <span>SELECT BELT COLOR</span><br>
+                        <div>
+                            <input type="radio" id="red" name="strap" value="red-belt">
+                            <label for="red">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="blue" name="strap" value="blue-belt">
+                            <label for="blue">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="grey" name="strap" value="grey-belt">
+                            <label for="grey">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="black" name="strap" value="black-belt">
+                            <label for="black">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="white" name="strap" value="white-belt">
+                            <label for="white">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="brown" name="strap" value="brown-belt">
+                            <label for="brown">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="mustard" name="strap" value="mustard-belt">
+                            <label for="mustard">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="teal" name="strap" value="teal-belt">
+                            <label for="teal">
+                                <span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="chain-strap">
+                        <span>CHAIN STRAP</span>
+                        <div class="strap-styles">
+                            <label>
+                                <input type="radio" id="rosegold" name="strap" value="rosegold-chain">
+                                <img src="rosegoldstrap.jpg" height="10px" width="10px">
+                            </label>
+                            <label>
+                                <input type="radio" id="gold" name="strap" value="gold-chain">
+                                <img src="goldstrap.png" height="10px" width="10px">
+                            </label>
+                            <label>
+                                <input type="radio" id="silver" name="strap" value="silver-chain">
+                                <img src="silverstrap.jpg" height="10px" width="10px">
+                            </label>
+                            <label>
+                                <input type="radio" id="blackchain" name="strap" value="blackchain-chain">
+                                <img src="blackchainstrap.png" height="10px" width="10px">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> <img id="icon" src="watchbelts.jpg" onclick="dispstrap()">
+                <div id="strapname">Personalize Your Strap</div>
+            </td>
+        </tr>
+    </table>
+    <div class="ORDER">
+        <button class="cart-btn" onclick=displayvalue()>Add to cart
+        </button>
+    </div>
+
+</body>
+<script>
+    var wdial = document.getElementById("container");
+    var wstrap = document.getElementById("strapinfo");
+    function dispdial() {
+        wstrap.style.display = "none";
+        wdial.style.display = "block";
+
+    }
+
+    function dispstrap() {
+        wdial.style.display = "none";
+        wstrap.style.display = "block";
+
+    }
+    function displayvalue() {
+        var ele = document.getElementsByName('design');
+
+        for (i = 0; i < ele.length; i++) {
+            if (ele[i].checked) {
+                var a = ele[i].value
+                console.log(a);
+            }
+        }
+        var ele1 = document.getElementsByName('shape');
+
+        for (i = 0; i < ele1.length; i++) {
+            if (ele1[i].checked) {
+                var a1 = ele1[i].value
+                console.log(a1);
+            }
+        }
+        var ele2 = document.getElementById("sel-col");
+        console.log(ele2.value);
+        var ele3 = document.getElementById('size');
+        console.log(ele3.options[ele3.selectedIndex].value);
+        var ele4 = document.getElementsByName('strap');
+
+        for (i = 0; i < ele4.length; i++) {
+            if (ele4[i].checked) {
+                var a2 = ele4[i].value
+                console.log(a2);
+            }
+        }
+
+        //to display selected items
+        var newline = "\n";
+        var space = "     ";
+        var msg = "YOUR ORDER" + newline + "Dial Design:" + a + newline + "Dial Shape:" + a1 + newline + "Dial color:" + ele2.value + newline + "Dial size:" + ele3.options[ele3.selectedIndex].value + newline + "Strap:" + a2;
+        alert(msg);
+    } 
+</script>
+
+</html>
